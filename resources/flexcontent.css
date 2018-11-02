@@ -1,0 +1,293 @@
+@charset "UTF-8";
+/* --------------------------------------------------------------
+# Flexcontent Styling
+# Compile using Sass: "sass --watch admin-style.scss:admin-style.css --no-source-map"
+-------------------------------------------------------------- */
+.acf-field[data-name=fc] {
+  border: none;
+}
+.acf-field[data-name=fc] > .acf-input > .acf-flexible-content > .values > .layout {
+  background-color: #e8e8e8;
+}
+.acf-field[data-name=fc] > .acf-input > .acf-flexible-content > .values > .layout:not(.-collapsed) > .acf-fields {
+  display: flex;
+  flex-flow: row wrap;
+}
+.acf-field[data-name=fc] > .acf-input > .acf-flexible-content > .values > .layout:not(.-collapsed) > .acf-fields > .acf-field {
+  flex: 0 1 auto;
+}
+.acf-field[data-name=fc] > .acf-input > .acf-flexible-content > .values > .layout:not(.-collapsed) > .acf-fields > .acf-field[data-name=columns], .acf-field[data-name=fc] > .acf-input > .acf-flexible-content > .values > .layout:not(.-collapsed) > .acf-fields > .acf-field[data-name=list] {
+  flex: 1 1 auto;
+}
+.acf-field[data-name=fc] .layout[data-layout=columns] .acf-field[data-name=columns] > .acf-input > .acf-flexible-content > .values > .layout {
+  background-color: #f3f3f3;
+}
+.acf-field[data-name=fc] .layout[data-layout=columns] .acf-field[data-name=columns] > .acf-input > .acf-flexible-content > .values > .layout:not(.-collapsed) > .acf-fields {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.acf-field[data-name=fc] .layout[data-layout=columns] .acf-field[data-name=columns] > .acf-input > .acf-flexible-content > .values > .layout:not(.-collapsed) > .acf-fields > .acf-field {
+  flex: 1;
+  padding: 10px !important;
+}
+.acf-field[data-name=fc] .layout[data-layout=columns] .acf-field[data-name=columns] > .acf-input > .acf-flexible-content > .values > .layout:not(.-collapsed) > .acf-fields > .acf-field > .acf-input > .acf-fields {
+  background-color: transparent;
+  display: flex;
+  flex-flow: row wrap;
+}
+.acf-field[data-name=fc] .layout[data-layout=columns] .acf-field[data-name=columns] > .acf-input > .acf-flexible-content > .values > .layout:not(.-collapsed) > .acf-fields > .acf-field > .acf-input > .acf-fields > .acf-tab-wrap {
+  width: 100%;
+}
+.acf-field[data-name=fc] .layout[data-layout=columns] .acf-field[data-name=columns] > .acf-input > .acf-flexible-content > .values > .layout:not(.-collapsed) > .acf-fields > .acf-field > .acf-input > .acf-fields > .acf-field {
+  padding: 10px 0 0 !important;
+  flex: 1 1 auto;
+}
+.acf-field[data-name=fc] .layout[data-layout=columns] .acf-field[data-name=columns] [data-layout=one_column_small] > .acf-fields > .acf-field {
+  flex: 0.8 !important;
+}
+.acf-field[data-name=fc] .layout[data-layout=columns] .acf-field[data-name=columns] [data-layout=right_wide] > .acf-fields > .acf-field:first-child {
+  flex: 0.5 !important;
+}
+.acf-field[data-name=fc] .layout[data-layout=columns] .acf-field[data-name=columns] [data-layout=left_wide] > .acf-fields > .acf-field:last-child {
+  flex: 0.5 !important;
+}
+.acf-field[data-name=fc] .layout {
+  border: none;
+  margin-top: 10px;
+}
+.acf-field[data-name=fc] .layout .acf-fields {
+  border: none;
+}
+.acf-field[data-name=fc] .layout .acf-fields .acf-field {
+  border: none !important;
+  padding: 10px !important;
+}
+.acf-field[data-name=fc] .layout .acf-fc-layout-handle {
+  padding: 4px !important;
+  background-color: #72777c;
+  border: none !important;
+  color: white;
+  font-size: 11px !important;
+  text-transform: uppercase;
+}
+.acf-field[data-name=fc] .layout .layout .acf-fc-layout-handle {
+  color: inherit;
+  background-color: #cbd1da;
+}
+.acf-field[data-name=fc] .layout .layout .layout .acf-fc-layout-handle {
+  background-color: #bfd1d8;
+}
+.acf-field[data-name=fc] .acf-fc-layout-controls .acf-icon,
+.acf-field[data-name=fc] .acf-fc-layout-order {
+  height: 14px !important;
+  width: 14px !important;
+  padding: 0 !important;
+  border: none;
+  line-height: 14px !important;
+  font-size: 11px !important;
+}
+.acf-field[data-name=fc] .acf-fc-layout-controls {
+  top: 4px !important;
+  right: 4px !important;
+}
+.acf-field[data-name=fc] .acf-label label {
+  color: #808080;
+  font-size: 11.5px;
+  font-weight: normal !important;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.acf-field[data-name=fc] > .acf-label {
+  display: none;
+}
+.acf-field[data-name=fc] .acf-fields > .acf-field[data-name=columns] > .acf-label {
+  display: none;
+}
+.acf-field[data-name=fc] .acf-fields > .acf-field[data-name=columns] .layout > .acf-fields > .acf-field > .acf-label {
+  display: none;
+}
+.acf-field[data-name=fc] .acf-fields > .acf-field[data-name=columns] .layout > .acf-fields > .acf-field .acf-fields > .acf-field[data-name=content] > .acf-label {
+  display: none;
+}
+.acf-field[data-name=fc] .acf-fields > .acf-field[data-name=columns] .layout > .acf-fields > .acf-field .acf-fields > .acf-field[data-name=content] .acf-fields > .acf-field > .acf-label {
+  display: none;
+}
+.acf-field[data-name=fc] .acf-fields > .acf-field[data-name=columns] .layout > .acf-fields > .acf-field .acf-fields > .acf-field[data-name=content] .acf-fields > .acf-field .acf-fields > .acf-field > .acf-label {
+  display: none;
+}
+.acf-field[data-name=fc] [data-name=list] .acf-label {
+  display: none;
+}
+.acf-field[data-name=fc] .acf-fields.-sidebar {
+  padding-left: 44px !important;
+}
+.acf-field[data-name=fc] .acf-fields.-sidebar::before {
+  background-color: #d2d2d3;
+  border: none;
+  width: 44px;
+}
+.acf-field[data-name=fc] .acf-tab-wrap.-left ul.acf-tab-group {
+  width: 44px;
+}
+.acf-field[data-name=fc] .acf-tab-wrap.-left ul.acf-tab-group li .acf-tab-button {
+  font-size: 0 !important;
+  line-height: 0 !important;
+  background-color: #d2d2d3;
+  border: none;
+}
+.acf-field[data-name=fc] .acf-tab-wrap.-left ul.acf-tab-group li .acf-tab-button:hover {
+  background: #f3f3f3;
+}
+.acf-field[data-name=fc] .acf-tab-wrap.-left ul.acf-tab-group li .acf-tab-button::before {
+  color: #888;
+  font-family: "dashicons", sans-serif;
+  font-size: 24px;
+  line-height: 20px;
+}
+.acf-field[data-name=fc] .acf-tab-wrap.-left ul.acf-tab-group li.active .acf-tab-button {
+  background-color: #e8e8e8;
+}
+.acf-field[data-name=fc] .acf-tab-wrap.-left ul.acf-tab-group li:nth-child(1) .acf-tab-button::before {
+  content: "";
+}
+.acf-field[data-name=fc] .acf-tab-wrap.-left ul.acf-tab-group li:nth-child(2) .acf-tab-button::before {
+  content: "";
+}
+.acf-field[data-name=fc] .acf-tab-wrap.-left ul.acf-tab-group li:nth-child(3) .acf-tab-button::before {
+  content: "";
+}
+.acf-field[data-name=fc] .acf-tab-wrap.-top {
+  background: transparent;
+}
+.acf-field[data-name=fc] .acf-tab-wrap.-top .acf-tab-group {
+  padding: 0;
+}
+.acf-field[data-name=fc] .acf-tab-wrap.-top li a {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 11px !important;
+}
+.acf-field[data-name=fc] .acf-tab-wrap.-top li.active .acf-tab-button {
+  background-color: #f3f3f3;
+  color: #555;
+  font-weight: bold;
+}
+.acf-field[data-name=fc] [data-layout=cta] [data-type=image][data-name=image] {
+  width: 33%;
+}
+.acf-field[data-name=fc] [data-layout=cta] [data-type=image][data-name=image] .acf-label {
+  display: none;
+}
+.acf-field[data-name=fc] [data-layout=cta] [data-type=group][data-name=content] {
+  width: 66%;
+}
+.acf-field[data-name=fc] [data-layout=cta] [data-type=group][data-name=content] .acf-label {
+  display: none;
+}
+.acf-field[data-name=fc] [data-layout=cta] [data-type=group][data-name=content] .acf-input .acf-fields {
+  display: flex;
+  flex-flow: row wrap;
+}
+.acf-field[data-name=fc] [data-layout=cta] [data-type=group][data-name=content] .acf-input .acf-fields .acf-field {
+  flex: 1 1 auto;
+}
+.acf-field[data-name=fc] [data-layout=cta] [data-type=group][data-name=content] .acf-input .acf-fields .acf-field[data-type=wysiwyg][data-name=editor] {
+  width: 100%;
+}
+.acf-field[data-name=fc] [data-layout=columns_list] [data-name=list] .acf-fields {
+  display: flex;
+  flex-flow: row wrap;
+}
+.acf-field[data-name=fc] [data-layout=columns_list] [data-name=list] .acf-fields .acf-field {
+  display: 1;
+}
+.acf-field[data-name=fc] [data-layout=columns_list] [data-name=list] .acf-fields .acf-field[data-name=image] {
+  width: 33%;
+}
+.acf-field[data-name=fc] [data-layout=columns_list] [data-name=list] .acf-fields .acf-field[data-type=group][data-name=content] {
+  width: 66%;
+}
+.acf-field[data-name=fc] [data-layout=columns_list] [data-name=list] .acf-fields .acf-field [data-name=editor] {
+  width: 100%;
+}
+.acf-field[data-name=fc] [data-name=bg_image] > .acf-input > .acf-fields {
+  display: flex;
+  flex-flow: row wrap;
+}
+.acf-field[data-name=fc] [data-name=bg_image] > .acf-input > .acf-fields > .acf-field {
+  flex: 1 1 auto;
+}
+.acf-field[data-name=fc] [data-layout=heading] [data-name=heading] {
+  flex-grow: 3 !important;
+}
+.acf-field[data-name=fc] [data-layout=quote] > .acf-fields {
+  display: flex;
+  flex-flow: row wrap;
+}
+.acf-field[data-name=fc] [data-layout=quote] > .acf-fields > .acf-field {
+  flex: 1 1 auto;
+}
+.acf-field[data-name=fc] [data-layout=quote] > .acf-fields > .acf-field[data-name=quote] {
+  width: 100%;
+}
+.acf-field[data-name=fc] [data-layout=gallery] > .acf-fields {
+  display: flex;
+  flex-flow: row wrap;
+}
+.acf-field[data-name=fc] [data-layout=gallery] > .acf-fields > .acf-field {
+  flex: 1 1 auto;
+}
+.acf-field[data-name=fc] [data-layout=gallery] > .acf-fields > .acf-field[data-name=gallery] {
+  width: 100%;
+}
+.acf-field[data-name=fc] [data-name=buttons] .acf-input > .acf-fields,
+.acf-field[data-name=fc] [data-layout=button] > .acf-fields {
+  display: flex;
+  flex-flow: row wrap;
+}
+.acf-field[data-name=fc] [data-name=buttons] .acf-input > .acf-fields > .acf-field,
+.acf-field[data-name=fc] [data-layout=button] > .acf-fields > .acf-field {
+  flex: 1 1 auto;
+}
+.acf-field[data-name=fc] .acf-table-optionbox {
+  padding: 5px 10px !important;
+  margin: 0 !important;
+  border: none !important;
+}
+.acf-field[data-name=fc] .acf-table-wrap {
+  padding: 10px 5px 10px 15px !important;
+}
+.acf-field[data-name=fc] [data-layout=table] > .acf-fields {
+  display: flex;
+  flex-flow: row wrap;
+}
+.acf-field[data-name=fc] [data-layout=table] > .acf-fields > .acf-field {
+  flex: 1 1 auto;
+}
+.acf-field[data-name=fc] [data-layout=table] > .acf-fields > .acf-field[data-name=table] {
+  width: 100%;
+}
+.acf-field[data-name=fc] [data-name=bg_image] .hide-if-value {
+  max-width: 200px;
+}
+.acf-field[data-name=fc] [data-name=bg_image] .hide-if-value p {
+  font-size: 12px;
+}
+
+.wp-core-ui button.shortcake-add-post-element,
+.wp-core-ui button.insert-media,
+.wp-core-ui a.gform_media_link {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  font-size: 0;
+  line-height: 0;
+}
+.wp-core-ui a.gform_media_link {
+  padding-left: 11px !important;
+}
+
+[data-name=page_subtitle] .acf-label {
+  display: none;
+}
